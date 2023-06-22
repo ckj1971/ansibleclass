@@ -7,8 +7,6 @@
       ansible.builtin.debug:
         msg: "{{ ansible_facts }}"
 
-        state: reloaded
-
     - name: Debug Facts Hostname - Unsafe Text
       ansible.builtin.debug:
         msg: "{{ ansible_facts['nodename'] }}"
